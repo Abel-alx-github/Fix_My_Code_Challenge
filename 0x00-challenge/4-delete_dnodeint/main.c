@@ -62,7 +62,10 @@ int main(void)
 	printf("-----------------\n");
 	delete_dnodeint_at_index(&head, 0);
 	printf("-----------------\n");
+	printf("the last one");
+	print_dlistint(head);
 	delete_dnodeint_at_index(&head, 0);
+	printf("all deleted");
 	print_dlistint(head);
 	free_dlistint(head);
 	return (0);

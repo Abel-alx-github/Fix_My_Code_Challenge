@@ -1,0 +1,9 @@
+
+CC = gcc
+CFLAGS = -Wall -pedantic -Werror -Wextra -std=gnu89
+NAME = delet
+SRC = add_dnodeint_end.c free_dlistint.c main.c  print_dlistint.c delete_dnodeint_at_index.c
+
+all: $(SRC) lists.h
+	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
+
